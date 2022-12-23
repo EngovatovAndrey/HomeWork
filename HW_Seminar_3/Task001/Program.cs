@@ -8,9 +8,18 @@ using static System.Console;
 Clear();
 WriteLine("Введите пятизначное число");
 int num = Convert.ToInt32(ReadLine());
-if ( 9999 > num  || num > 99999)
+
+if ( 9999 > num  || num > 99999) // Проверка корректности ввода
 {
     WriteLine("Ошибка!");
 }
 
-WriteLine(num);
+int digit_1 = num/10000;
+int digit_2 = (num/1000)%10;
+int digit_3 = (num/100)%10;
+int digit_4 = (num/10)%10;
+int digit_5 = num%10;
+
+WriteLine(digit_1 == digit_5? digit_2 == digit_4? "Число является палиндромом": 
+            "Число не является палиндромом": "Число не является палиндромом");
+

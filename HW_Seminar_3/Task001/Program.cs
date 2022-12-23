@@ -12,6 +12,7 @@ int num = Convert.ToInt32(ReadLine());
 if ( 9999 > num  || num > 99999) // Проверка корректности ввода
 {
     WriteLine("Ошибка!");
+    return;
 }
 
 int digit_1 = num/10000;

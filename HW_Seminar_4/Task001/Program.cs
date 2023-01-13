@@ -8,8 +8,13 @@
 
 using static System.Console;
 Clear();
-WriteLine(DigitPower(3, 5));
-WriteLine(DigitPower(2, 4));
+
+WriteLine("Введите число A");
+int number1 = Convert.ToInt32(ReadLine());
+WriteLine("Введите число B");
+int number2 = Convert.ToInt32(ReadLine());
+
+WriteLine($"Результат работы метода - {DigitPower(number1, number2)}");
 
 int DigitPower(int a, int b)
 {

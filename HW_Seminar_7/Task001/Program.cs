@@ -31,7 +31,7 @@ void PrintMatrix(double[,] mtx)
     {
         for(int j = 0; j < mtx.GetLength(1); j++)
         {
-            Write($"{Math.Round(mtx[i, j], 1)} ");
+            Write($"{Math.Round(mtx[i, j], 1), 5} ");
         }
         WriteLine();
         WriteLine();

@@ -13,10 +13,6 @@ Clear();
 
 int[,] matrix = GetMatrix2D(2, 2);
 int[,] matrix2 = GetMatrix2D(2, 2);
-// int[,] array = new int[,] { { 2, 4 }, { 3, 2 } };
-// int[,] array2 = new int[,] { { 3, 4 }, { 3, 3 } };
-
-int[,] testMarrix1 = new int[2, 2];
 
 PrintMatrix(matrix);
 WriteLine();
@@ -43,7 +39,7 @@ void PrintMatrix(int[,] matrix)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            Write($"{matrix[i, j],2} ");
+            Write($"{matrix[i, j],3} ");
         }
         WriteLine();
     }

@@ -1,4 +1,4 @@
-w
+
 import java.util.*;
 
 public class HW {
